@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+        @font-face {
+            font-family: noto-sans;
+            src: url(NotoSansArabic-VariableFont_wdth\,wght.ttf);
+        }
+
+        @font-face {
+            font-family: noor;
+            src: url(Noor\ Regular.ttf);
+        }
+
+        @font-face {
+            font-family: noor-light;
+            src: url(Noor\ Light.ttf);
+        }
+
+        body {
+            margin: 0;
+            background: grey;
+        }
+        .email {
+            width: 600px;
+            height: 100%;
+            background: #FFFFFF;
+            border-radius: 11px;
+            margin: auto;
+        }
+
+        .top {
+            background: #00A29B;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 30px;
+            border-top-right-radius: 11px;
+            border-top-left-radius: 11px;
+        }
+        .date, .name {
+            font-family: 'noto-sans';
+            text-align: right;
+            margin: 0;
+        }
+
+        .date {
+            font-size: 14px;
+            color: #EEEEEE;
+            font-weight: 400;
+        }
+
+        .name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin: 0;
+        }
+
+        .middle {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 95%;
+            margin: auto;
+        }
+
+        .middle .right {
+            font-family: 'noor-light';
+            font-weight: 600;
+            font-size: 12px;
+            text-align: right;
+            direction: rtl;
+            padding: 0 30px;
+        }
+
+        .middle .right p {
+            margin: 27px 0
+        }
+
+        .bold {
+            font-family: 'noor';
+            font-weight: 600;
+        }
+
+        .highlight {
+            background: #FFD600;
+            display: inline;
+            padding: 6px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="email">
+
+        <div class="top">
+            
+            <div>
+                <img width="103px" src="htag.png" alt="">
+            </div>
+
+            <div>
+                <p class="date">٩ أكتوبر ٢٠٢٢ - ٩:٢٠ م  | طلب تحاليل رقم #182-1005</p>
+                <p class="name">أ/ محمود نورالدين سراج</p>
+            </div>
+        </div>
+
+        <div class="middle">
+
+            <div class="right">
+                <p>شكرًا<span class="bold"> محمود نورالدين سراج</span> على الدفع من خلالنا <span class="bold">بـكارت الصحة</span> رقم GRD125KF</p>
+
+                <p>لقد قمنا بتأكيد طلبك للخدمات الطبية التالية في <span class="bold">معامل المختبر</span>، <span class="bold">بفرع 65 شارع اللاسلكي - المعادي</span>.</p>
+
+                <p class="highlight">يمكنك الآن التوجه إلى <span class="bold">معمل المختبر</span> بالفرع المذكور وتلقي الخدمة الطبية</p>
+            </div>
+
+            <div class="left">
+                <img width="98px" src="htag card.png" alt="">
+            </div>
+        </div>
+
+        <div class="table">
+            <ul>
+                <li>
+                    <div>
+                        <p>الخدمات المطلوبة</p>
+                        <p>الكمية</p>
+                        <p>السعر</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+</body>
+</html>
