@@ -22,6 +22,16 @@
             src: url(Noor\ Light.ttf);
         }
 
+        @font-face {
+            font-family: roboto-light;
+            src: url(Roboto-Light.ttf);
+        }
+
+        @font-face {
+            font-family: roboto-bold;
+            src: url(Roboto-Bold.ttf);
+        }
+
         body {
             margin: 0;
             background: grey;
@@ -67,7 +77,8 @@
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
-            width: 95%;
+            /* width: 95%; */
+            padding: 30px;
             margin: auto;
         }
 
@@ -77,7 +88,7 @@
             font-size: 12px;
             text-align: right;
             direction: rtl;
-            padding: 0 30px;
+            padding: 0 26px;
         }
 
         .middle .right p {
@@ -85,7 +96,7 @@
         }
 
         .bold {
-            font-family: 'noor';
+            font-family: 'noor', 'roboto-bold';
             font-weight: 600;
         }
 
@@ -95,6 +106,138 @@
             padding: 6px;
         }
 
+        .table {
+            width: 90%;
+            margin: auto;
+        }
+
+        .head, .cell {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            background: #F3F3F3;
+            border: 1px solid#D6DCE0;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px;
+        }
+
+        .cell {
+            background: #FFFFFF;
+            border-top: none
+
+        }
+
+        .head > div:nth-child(1), .cell > div:nth-child(1) {
+            width: 38.5%;
+            padding: 13px;
+        }
+
+        .head > div:nth-child(3), .cell > div:nth-child(3) {
+            width: 38.5%;
+            padding: 13px;
+        }
+
+        .head > div:nth-child(2), .cell > div:nth-child(2) {
+            width: 12%;
+            padding: 13px;
+        }
+
+        .head > div > p, .cell > div > p {
+            font-family: 'noor', 'roboto-light';
+            font-size: 12px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .head div:nth-child(2), .cell div:nth-child(2) {
+            border-right: 1px solid #D6DCE0;
+            border-left: 1px solid #D6DCE0;
+        }        
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .discount {
+            color: #BA131D;
+        }
+
+        .rtl {
+            direction: rtl;
+        }
+
+        .conclusion, .cta-wrapper {
+            width: 90%;
+            margin: auto;
+            text-align: right;
+            padding: 18px 0;
+        }
+
+        .cta-wrapper {
+            padding: 0;
+        }
+
+        .info {
+            direction: rtl;
+            font-family: 'noor-light';
+            font-size: 13px;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .price {
+            font-family: 'roboto-bold';
+            font-weight: 700;
+            color:#00A29B
+        }
+
+        .yellow {
+            font-family: 'noor';
+            font-weight: 600;
+            color: #00A29B;
+        }
+
+        .noor-bold {
+            font-family: 'noor';
+            font-weight: 600;
+        }
+
+        .cta {
+            background: #00A29B;
+            font-family: 'noor';
+            font-weight: 600;
+            font-size: 12px;
+            color: #FFFFFF;
+            border: 1px solid #00A29B;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .hr {
+            border: 1px solid #D6DCE0;
+            margin-top: 15px;
+        }
+
+        .contact-us-wrapper {
+            width: 90%;
+            margin: auto;
+            padding-bottom: 8px;
+        }
+
+        .contact-us {
+            direction: rtl;
+            font-size: 10px;
+            color: #3B3B3B;
+            font-family: 'noor';
+        }
+
+        .htag-team {
+            color: #00A29B;
+        }
     </style>
 </head>
 <body>
@@ -116,7 +259,7 @@
         <div class="middle">
 
             <div class="right">
-                <p>شكرًا<span class="bold"> محمود نورالدين سراج</span> على الدفع من خلالنا <span class="bold">بـكارت الصحة</span> رقم GRD125KF</p>
+                <p>شكرًا<span class="bold"> محمود نورالدين سراج</span> على الدفع من خلالنا <span class="bold">بـكارت الصحة رقم GRD125KF</span></p>
 
                 <p>لقد قمنا بتأكيد طلبك للخدمات الطبية التالية في <span class="bold">معامل المختبر</span>، <span class="bold">بفرع 65 شارع اللاسلكي - المعادي</span>.</p>
 
@@ -129,15 +272,93 @@
         </div>
 
         <div class="table">
-            <ul>
-                <li>
-                    <div>
-                        <p>الخدمات المطلوبة</p>
-                        <p>الكمية</p>
-                        <p>السعر</p>
-                    </div>
-                </li>
-            </ul>
+            <div class="head">
+                <div>
+                    <p class="text-right">الخدمات المطلوبة</p>
+                </div>
+
+                <div class="text-center">
+                    <p>الكمية</p>
+                </div>
+
+                <div class="text-right">
+                    <p>السعر</p>
+                </div>
+            </div>
+
+            <div class="cell">
+                <div>
+                    <p class="text-right">Complete Blood Picture CBC</p>
+                </div>
+
+                <div class="text-center">
+                    <p>1</p>
+                </div>
+
+                <div class="text-right">
+                    <p>EGP 78</p>
+                </div>
+            </div>
+
+            <div class="cell">
+                <div>
+                    <p class="text-right">TSH Panel Thyroid, TS3, TS4</p>
+                </div>
+
+                <div class="text-center">
+                    <p>1</p>
+                </div>
+
+                <div class="text-right">
+                    <p>EGP 78</p>
+                </div>
+            </div>
+
+            <div class="cell">
+                <div>
+                    <p class="text-right">Vitamin D </p>
+                </div>
+
+                <div class="text-center">
+                    <p>1</p>
+                </div>
+
+                <div class="text-right">
+                    <p>EGP 78</p>
+                </div>
+            </div>
+
+            <div class="cell">
+                <div>
+                    <p class="text-right rtl">خصم Alex100</p>
+                </div>
+
+                <div class="text-center">
+                    <p>1</p>
+                </div>
+
+                <div class="text-right discount">
+                    <p>EGP 100-</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="conclusion">
+            <p class="info">
+                <span class="noor-bold">تم تحصيل</span> <span class="yellow">إجمالي مبلغ</span> <span class="price">EGP 768.25</span> <span class="yellow">جنية</span>  عن طريق الدفع الإلكتروني المسبق نظير الخدمات الطبية المذكورة. 
+            </p>
+        </div>
+
+        <div class="cta-wrapper">
+            <button class="cta">عرض الطلب على التطبيق</button>
+        </div>
+
+        <div class="hr"></div>
+        
+        <div class="contact-us-wrapper">
+            <p class="contact-us">
+                ** للاستفسار، تواصل مع <span class="htag-team">فريق كارت الصحة</span> من التطبيق 
+            </p>
         </div>
     </section>
     
