@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,6 +38,7 @@
             margin: 0;
             background: grey;
         }
+
         .email {
             width: 600px;
             height: 100%;
@@ -47,15 +49,25 @@
 
         .top {
             background: #00A29B;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
             padding: 16px 30px;
             border-top-right-radius: 11px;
             border-top-left-radius: 11px;
+            overflow-x: auto;
         }
-        .date, .name {
+
+        .top .left {
+            display: inline;
+            float: left;
+            margin-top: 15px;
+        }
+
+        .top .right {
+            display: inline;
+            float: right;
+        }
+
+        .date,
+        .name {
             font-family: 'noto-sans';
             text-align: right;
             margin: 0;
@@ -75,12 +87,12 @@
         }
 
         .middle {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            /* width: 95%; */
             padding: 30px;
             margin: auto;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background: #FFFFFF;
+
         }
 
         .middle .right {
@@ -106,16 +118,22 @@
             display: inline;
             padding: 6px;
         }
+        .head,
+        .cell {
+            background: #F3F3F3;
+            border: 1px solid#D6DCE0;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px;
+        }
 
-        .table {
+
+        /* .table {
             width: 90%;
             margin: auto;
         }
 
-        .head, .cell {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
+        .head,
+        .cell {
             background: #F3F3F3;
             border: 1px solid#D6DCE0;
             border-top-right-radius: 3px;
@@ -125,35 +143,39 @@
         .cell {
             background: #FFFFFF;
             border-top: none
-
         }
 
-        .head > div:nth-child(1), .cell > div:nth-child(1) {
+        .head>div:nth-child(1),
+        .cell>div:nth-child(1) {
             width: 38.5%;
             padding: 13px;
         }
 
-        .head > div:nth-child(3), .cell > div:nth-child(3) {
+        .head>div:nth-child(3),
+        .cell>div:nth-child(3) {
             width: 38.5%;
             padding: 13px;
         }
 
-        .head > div:nth-child(2), .cell > div:nth-child(2) {
+        .head>div:nth-child(2),
+        .cell>div:nth-child(2) {
             width: 12%;
             padding: 13px;
         }
 
-        .head > div > p, .cell > div > p {
+        .head>div>p,
+        .cell>div>p {
             font-family: 'noor', 'roboto-light';
             font-size: 12px;
             font-weight: 600;
             margin: 0;
         }
 
-        .head div:nth-child(2), .cell div:nth-child(2) {
+        .head div:nth-child(2),
+        .cell div:nth-child(2) {
             border-right: 1px solid #D6DCE0;
             border-left: 1px solid #D6DCE0;
-        }        
+        } */
 
         .text-center {
             text-align: center;
@@ -171,7 +193,8 @@
             direction: rtl;
         }
 
-        .conclusion, .cta-wrapper {
+        .conclusion,
+        .cta-wrapper {
             width: 90%;
             margin: auto;
             text-align: right;
@@ -193,7 +216,7 @@
         .price {
             font-family: 'roboto-bold';
             font-weight: 700;
-            color:#00A29B
+            color: #00A29B
         }
 
         .yellow {
@@ -247,20 +270,21 @@
         #qrcode {
             position: absolute;
             left: 32%;
-            top: 16%;;
+            top: 16%;
+            ;
         }
 
         #qrcode img {
             width: 35px;
         }
 
-        .qr-code { 
+        .qr-code {
             font-family: 'roboto-light';
             font-weight: 700;
             margin: 0;
         }
 
-        .code { 
+        .code {
             font-family: 'roboto-light';
             margin: 0;
             font-size: 4px;
@@ -273,33 +297,50 @@
             font-size: 5px;
             text-align: center;
         }
+
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 90%;
+            margin: auto;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            text-align: right;
+        }
+
+        th, tr {
+            font-family: 'noor', 'roboto-light';
+            font-size: 12px;
+            font-weight: 600;
+            margin: 0;
+        }
+
     </style>
 </head>
+
 <body>
 
     <section class="email">
 
         <div class="top">
-            
-            <div>
+
+            <div class="left">
                 <img width="103px" src="htag.png" alt="">
             </div>
 
-            <div>
-                <p class="date">٩ أكتوبر ٢٠٢٢ - ٩:٢٠ م  | طلب تحاليل رقم #182-1005</p>
+            <div class="right">
+                <p class="date">٩ أكتوبر ٢٠٢٢ - ٩:٢٠ م | طلب تحاليل رقم #182-1005</p>
                 <p class="name">أ/ محمود نورالدين سراج</p>
             </div>
         </div>
 
         <div class="middle">
-
-            <div class="right">
-                <p>شكرًا<span class="bold"> محمود نورالدين سراج</span> على الدفع من خلالنا <span class="bold">بـكارت الصحة رقم GRD125KF</span></p>
-
-                <p>لقد قمنا بتأكيد طلبك للخدمات الطبية التالية في <span class="bold">معامل المختبر</span>، <span class="bold">بفرع 65 شارع اللاسلكي - المعادي</span>.</p>
-
-                <p class="highlight">يمكنك الآن التوجه إلى <span class="bold">معمل المختبر</span> بالفرع المذكور وتلقي الخدمة الطبية</p>
-            </div>
 
             <div class="left">
                 <img width="98px" src="htag card.png" alt="">
@@ -311,11 +352,23 @@
                 </div>
             </div>
 
+            <div class="right">
+                <p>شكرًا<span class="bold"> محمود نورالدين سراج</span> على الدفع من خلالنا <span class="bold">بـكارت
+                        الصحة رقم GRD125KF</span></p>
+
+                <p>لقد قمنا بتأكيد طلبك للخدمات الطبية التالية في <span class="bold">معامل المختبر</span>، <span
+                          class="bold">بفرع 65 شارع اللاسلكي - المعادي</span>.</p>
+
+                <p class="highlight">يمكنك الآن التوجه إلى <span class="bold">معمل المختبر</span> بالفرع المذكور وتلقي
+                    الخدمة الطبية</p>
+            </div>
+
+
 
 
 
         </div>
-
+        <!-- 
         <div class="table">
             <div class="head">
                 <div>
@@ -386,11 +439,27 @@
                     <p>EGP 100-</p>
                 </div>
             </div>
-        </div>
-        
+        </div> -->
+
+        <table>
+            <tr class="head">
+                <th>السعر</th>
+                <th>الكمية</th>
+                <th>الخدمات المطلوبة</th>
+            </tr>
+
+            <tr>
+                <td>EGP 78</td>
+                <td>1</td>
+                <td>Complete Blood Picture CBC</td>
+        </table>
+
+
         <div class="conclusion">
             <p class="info">
-                <span class="noor-bold">تم تحصيل</span> <span class="yellow">إجمالي مبلغ</span> <span class="price">EGP 768.25</span> <span class="yellow">جنية</span>  عن طريق الدفع الإلكتروني المسبق نظير الخدمات الطبية المذكورة. 
+                <span class="noor-bold">تم تحصيل</span> <span class="yellow">إجمالي مبلغ</span> <span class="price">EGP
+                    768.25</span> <span class="yellow">جنية</span> عن طريق الدفع الإلكتروني المسبق نظير الخدمات الطبية
+                المذكورة.
             </p>
         </div>
 
@@ -399,25 +468,26 @@
         </div>
 
         <div class="hr"></div>
-        
+
         <div class="contact-us-wrapper">
             <p class="contact-us">
-                ** للاستفسار، تواصل مع <span class="htag-team">فريق كارت الصحة</span> من التطبيق 
+                ** للاستفسار، تواصل مع <span class="htag-team">فريق كارت الصحة</span> من التطبيق
             </p>
         </div>
     </section>
-    
+
     <script type="text/javascript">
         var qrcode = new QRCode(document.getElementById("qrcode"), {
             text: "https://healthtag.me/",
             width: 100,
             height: 100,
-            colorDark : "#000000",
-            colorLight : "#ffffff",
-            correctLevel : QRCode.CorrectLevel.H
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
         });
-        </script>
-        
-        
+    </script>
+
+
 </body>
+
 </html>
