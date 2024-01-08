@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Document</title>
+    <script type="text/javascript" src="qrcode.js"></script>
 
     <style>
         @font-face {
@@ -238,6 +239,39 @@
         .htag-team {
             color: #00A29B;
         }
+
+        .left {
+            position: relative;
+        }
+
+        #qrcode {
+            position: absolute;
+            left: 32%;
+            top: 16%;;
+        }
+
+        #qrcode img {
+            width: 35px;
+        }
+
+        .qr-code { 
+            font-family: 'roboto-light';
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .code { 
+            font-family: 'roboto-light';
+            margin: 0;
+        }
+
+        .code-info {
+            position: absolute;
+            top: 64px;
+            left: 35px;
+            font-size: 5px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -268,7 +302,17 @@
 
             <div class="left">
                 <img width="98px" src="htag card.png" alt="">
+                <div id="qrcode"></div>
+
+                <div class="code-info">
+                    <p class="code">CODE</p>
+                    <p class="qr-code">GRD125KF</p>
+                </div>
             </div>
+
+
+
+
         </div>
 
         <div class="table">
@@ -362,5 +406,17 @@
         </div>
     </section>
     
+    <script type="text/javascript">
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: "https://healthtag.me/",
+            width: 100,
+            height: 100,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+        </script>
+        
+        
 </body>
 </html>
