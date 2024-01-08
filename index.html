@@ -6,34 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600;800&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
     <script type="text/javascript" src="qrcode.js"></script>
 
     <style>
-        @font-face {
-            font-family: noto-sans;
-            src: url(NotoSansArabic-VariableFont_wdth\,wght.ttf);
-        }
-
-        @font-face {
-            font-family: noor;
-            src: url(Noor\ Regular.ttf);
-        }
-
-        @font-face {
-            font-family: noor-light;
-            src: url(Noor\ Light.ttf);
-        }
-
-        @font-face {
-            font-family: roboto-light;
-            src: url(Roboto-Light.ttf);
-        }
-
-        @font-face {
-            font-family: roboto-bold;
-            src: url(Roboto-Bold.ttf);
-        }
-
         body {
             margin: 0;
             background: grey;
@@ -68,7 +63,7 @@
 
         .date,
         .name {
-            font-family: 'noto-sans';
+            font-family: 'Noto Sans Arabic', sans-serif;
             text-align: right;
             margin: 0;
         }
@@ -96,12 +91,12 @@
         }
 
         .middle .right {
-            font-family: 'noor-light';
+            font-family: 'Noto Kufi Arabic', sans-serif;
             font-weight: 600;
             font-size: 12px;
             text-align: right;
             direction: rtl;
-            padding: 0 26px;
+            padding: 0 8px;
         }
 
         .middle .right p {
@@ -109,14 +104,14 @@
         }
 
         .bold {
-            font-family: 'noor', 'roboto-bold';
-            font-weight: 600;
+            font-family: 'Noto Kufi Arabic', sans-serif;
+            font-weight: 800;
         }
 
         .highlight {
             background: #FFD600;
             display: inline;
-            padding: 6px;
+            padding: 4px;
         }
         .head,
         .cell {
@@ -125,57 +120,6 @@
             border-top-right-radius: 3px;
             border-top-left-radius: 3px;
         }
-
-
-        /* .table {
-            width: 90%;
-            margin: auto;
-        }
-
-        .head,
-        .cell {
-            background: #F3F3F3;
-            border: 1px solid#D6DCE0;
-            border-top-right-radius: 3px;
-            border-top-left-radius: 3px;
-        }
-
-        .cell {
-            background: #FFFFFF;
-            border-top: none
-        }
-
-        .head>div:nth-child(1),
-        .cell>div:nth-child(1) {
-            width: 38.5%;
-            padding: 13px;
-        }
-
-        .head>div:nth-child(3),
-        .cell>div:nth-child(3) {
-            width: 38.5%;
-            padding: 13px;
-        }
-
-        .head>div:nth-child(2),
-        .cell>div:nth-child(2) {
-            width: 12%;
-            padding: 13px;
-        }
-
-        .head>div>p,
-        .cell>div>p {
-            font-family: 'noor', 'roboto-light';
-            font-size: 12px;
-            font-weight: 600;
-            margin: 0;
-        }
-
-        .head div:nth-child(2),
-        .cell div:nth-child(2) {
-            border-right: 1px solid #D6DCE0;
-            border-left: 1px solid #D6DCE0;
-        } */
 
         .text-center {
             text-align: center;
@@ -209,32 +153,32 @@
 
         .info {
             direction: rtl;
-            font-family: 'noor-light';
+            font-family: 'Noto Kufi Arabic', sans-serif;
             font-size: 13px;
             font-weight: 600;
             color: #000000;
         }
 
         .price {
-            font-family: 'roboto-bold';
+            font-family: 'Roboto', 'Noto Kufi Arabic';
             font-weight: 700;
             color: #00A29B
         }
 
         .yellow {
-            font-family: 'noor';
-            font-weight: 600;
+            font-family: 'Noto Kufi Arabic', sans-serif;
+            font-weight: 800;
             color: #00A29B;
         }
 
         .noor-bold {
-            font-family: 'noor';
-            font-weight: 600;
+            font-family: 'Noto Kufi Arabic', sans-serif;
+            font-weight: 800;
         }
 
         .cta {
             background: #00A29B;
-            font-family: 'noor';
+            font-family: 'Noto Kufi Arabic', sans-serif;
             font-weight: 600;
             font-size: 12px;
             color: #FFFFFF;
@@ -259,7 +203,7 @@
             direction: rtl;
             font-size: 10px;
             color: #3B3B3B;
-            font-family: 'noor';
+            font-family: 'Noto Kufi Arabic', sans-serif;
         }
 
         .htag-team {
@@ -282,13 +226,13 @@
         }
 
         .qr-code {
-            font-family: 'roboto-light';
-            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
             margin: 0;
         }
 
         .code {
-            font-family: 'roboto-light';
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             font-size: 4px;
         }
@@ -318,9 +262,9 @@
         }
 
         th, tr {
-            font-family: 'noor', 'roboto-light';
+            font-family: 'Roboto', 'Noto Kufi Arabic', sans-serif;
             font-size: 12px;
-            font-weight: 600;
+            font-weight: 400;
             margin: 0;
         }
 
