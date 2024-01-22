@@ -92,15 +92,19 @@
 
         .middle .right, .middle .right p {
             font-family: 'Tajawal', sans-serif;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 12px;
             text-align: right;
             direction: rtl;
-            padding: 0 8px;
+            padding: 0 16px;
+        }
+
+        .middle .right {
+            margin-top: 8px;
         }
 
         .middle .right p {
-            margin: 27px 0
+            margin-bottom: 29px;
         }
 
         .bold {
@@ -136,6 +140,7 @@
         }
 
         .discount {
+            font-weight: 500;
             color: #BA131D;
         }
 
@@ -161,7 +166,7 @@
             direction: rtl;
             font-family: 'Tajawal', sans-serif;
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 500;
             color: #000000;
         }
 
@@ -209,6 +214,7 @@
             direction: rtl;
             font-size: 10px;
             color: #3B3B3B;
+            font-weight: 500;
             font-family: 'Tajawal', sans-serif;
         }
 
@@ -341,78 +347,6 @@
 
 
         </div>
-        <!-- 
-        <div class="table">
-            <div class="head">
-                <div>
-                    <p class="text-right">الخدمات المطلوبة</p>
-                </div>
-
-                <div class="text-center">
-                    <p>الكمية</p>
-                </div>
-
-                <div class="text-right">
-                    <p>السعر</p>
-                </div>
-            </div>
-
-            <div class="cell">
-                <div>
-                    <p class="text-right">Complete Blood Picture CBC</p>
-                </div>
-
-                <div class="text-center">
-                    <p>1</p>
-                </div>
-
-                <div class="text-right">
-                    <p>EGP 78</p>
-                </div>
-            </div>
-
-            <div class="cell">
-                <div>
-                    <p class="text-right">TSH Panel Thyroid, TS3, TS4</p>
-                </div>
-
-                <div class="text-center">
-                    <p>1</p>
-                </div>
-
-                <div class="text-right">
-                    <p>EGP 78</p>
-                </div>
-            </div>
-
-            <div class="cell">
-                <div>
-                    <p class="text-right">Vitamin D </p>
-                </div>
-
-                <div class="text-center">
-                    <p>1</p>
-                </div>
-
-                <div class="text-right">
-                    <p>EGP 78</p>
-                </div>
-            </div>
-
-            <div class="cell">
-                <div>
-                    <p class="text-right rtl">خصم Alex100</p>
-                </div>
-
-                <div class="text-center">
-                    <p>1</p>
-                </div>
-
-                <div class="text-right discount">
-                    <p>EGP 100-</p>
-                </div>
-            </div>
-        </div> -->
 
         <div class="table-wrapper">
             
@@ -424,9 +358,16 @@
                 </tr>
     
                 <tr>
-                    <td>EGP 78</td>
+                    <td class="discount">EGP 100-</td>
                     <td>1</td>
                     <td>Complete Blood Picture CBC</td>
+                </tr>
+
+                <tr>
+                    <td class="discount">EGP 100-</td>
+                    <td>1</td>
+                    <td>خصم Alex100</td>
+                </tr>
             </table>
 
         </div>
